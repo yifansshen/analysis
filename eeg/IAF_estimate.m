@@ -45,7 +45,7 @@ else
 subnum = num2str(subnum);
 end
 
-prefix = strcat('L',labnum,'_P',subnum);
+prefix = strcat('L',labnum,'_S',subnum);
 prefix_S = strcat('L',labnum,'_S',subnum);
 
 full_data_path = fullfile(data_path,prefix);
@@ -156,4 +156,5 @@ psd(i,:) = paf_sums.ps;
 %end
 
 end
+
 
