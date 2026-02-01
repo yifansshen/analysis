@@ -23,7 +23,7 @@ for n=1:length(subnum)
     else
         sub = num2str(sub);
     end
-prefix = strcat('L', num2str(labnum), '_P', sub);
+prefix = strcat('L', num2str(labnum), '_S', sub);
 
 % 1) try：data_path/prefix/*Meta_Data.xlsx
 cand_dirs = {
@@ -131,6 +131,7 @@ end
 legend('Mean EC', '±SE EC', 'Mean EO', '±SE EO');
 hold off
 title('Post');
+
 
 
 
